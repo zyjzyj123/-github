@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title></title>
+	<style type="text/css">
+		div{
+			width:200px;
+			height: 200px;
+			background: skyblue;
+			position: absolute;
+			top:100px;
+			left:100px;
+			transition:all 6s ease 0s;
+		}
+	</style>
+</head>
+<body>
+	<div id='box'></div>
+	<input type='button' value ='按我就开始运动' onclick = 'fun()'>
+	<script type="text/javascript">
+	// //获取标签
+	// 	var box = document.getElementById('box');
+	// //设置一个变量
+	// 	var nowLeft = 100;
+	// //设置定时
+
+	// 	setInterval(function(){
+	// 		nowLeft += 10;
+	// 		//设置盒子的left值
+	// 		box.style.left = nowLeft + 'px';
+	// 	},20)
+		var box = document.getElementById('box');
+		//给按钮一个事件
+		function fun(){
+			box.style.left = '800px';
+		}
+	</script>
+</body>
+</html>
